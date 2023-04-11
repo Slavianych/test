@@ -39,9 +39,9 @@ class TestApp(App):
 
         cur = con.cursor()
         cur.execute('select name from spr_service where vid = 5')
-        asd = cur.fetchall()
+        ad = cur.fetchall()
         text = ''
-        for i in asd:
+        for i in ad:
             for j in i:
                 text += str(j)
             text += '\n'
